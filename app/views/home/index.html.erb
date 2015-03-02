@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <h1 class="col-md-12 text-center">Calculator</h1>
+  </div>
+</div>
+<br>
+<div class="container" ng-controller="indexCtrl">
+  <div class="row">
+    <form name="calculator" class="text-center">
+      <input type="textfield" name="ans" value="{{a_number}}">
+      <div class="row">
+        <span>
+          <button ng-click="input7()" class="btn btn-success btn-lg">7</button>
+          <button ng-click="input8()" class="btn btn-success btn-lg">8</button>
+          <button ng-click="input9()" class="btn btn-success btn-lg">9</button>
+          <button ng-click="add()" class="btn btn-success btn-lg">+</button>
+        </span>
+      </div>
+      <div class="row">
+        <span>
+        <button ng-click="input4()" class="btn btn-success btn-lg">4</button>
+        <button ng-click="input5()" class="btn btn-success btn-lg">5</button>
+        <button ng-click="input6()" class="btn btn-success btn-lg">6</button>
+        <button ng-click="subtract()" class="btn btn-success btn-lg">-</button>
+        </span>
+      </div>
+      <div class="row">
+        <span>
+        <button ng-click="input1()" class="btn btn-success btn-lg">1</button>
+        <button ng-click="input2()" class="btn btn-success btn-lg">2</button>
+        <button ng-click="input3()" class="btn btn-success btn-lg">3</button>
+        <button ng-click="equal()" class="btn btn-success btn-lg">=</button>
+        </span>
+      </div>
+      <div class="row">
+        <span>
+          <button ng-click="input0()" class="btn btn-success btn-lg">0</button>
+          <button ng-click="clear()" class="btn btn-success btn-lg">C</button>
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
