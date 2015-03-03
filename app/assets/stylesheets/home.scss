@@ -1,3 +1,51 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #ECECEA;
+  background-color: snow;
+}
+h1{
+  color: #D9853B;
+}
+h4{
+  color: #D9853B;
+}
 .box {
   border: 1px solid green;
+}
+
+.jumbotron-calculator {
+  background-image: url('calculator.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 75%;
+  padding: 150px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 17px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.btn-calculator {
+  color: #ECECEA;
+  background-color: #D9853B;
+  border-color: #d43f3a;
+  border-radius: 5px;
 }

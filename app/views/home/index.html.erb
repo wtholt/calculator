@@ -1,42 +1,43 @@
 <div class="container">
   <div class="row">
-    <h1 class="col-md-12 text-center">Calculator</h1>
+    <div class="col-md-12 jumbotron-calculator text-center"></div>
+  </div>
+</div>
+<div class="container-section col-md-10 col-md-offset-1">
+  <div class="row">
+    <h1 class="col-md-4 col-md-offset-3 resize"><strong>Simple Calculator</strong></h1>
+  <div class="row">
+    <h4 class="col-md-4 col-md-offset-4 text-center">For everyday calculations.</h4>
+  </div>
   </div>
 </div>
 <br>
 <div class="container" ng-controller="indexCtrl">
-  <div class="row">
-    <form name="calculator" class="text-center">
-      <input type="textfield" name="ans" value="{{a_number}}">
-      <div class="row">
-        <span>
-          <button ng-click="input7()" class="btn btn-success btn-lg">7</button>
-          <button ng-click="input8()" class="btn btn-success btn-lg">8</button>
-          <button ng-click="input9()" class="btn btn-success btn-lg">9</button>
-          <button ng-click="add()" class="btn btn-success btn-lg">+</button>
-        </span>
+  <div class="form-group col-md-4 col-md-offset-4">
+    <form name="calculator">
+      <input type="textfield" value="{{a_number}}" class="form-control">
+      <div class="row text-center">
+        <button ng-click="input7()" class="btn btn-calculator btn-lg">7</button>
+        <button ng-click="input8()" class="btn btn-calculator btn-lg">8</button>
+        <button ng-click="input9()" class="btn btn-calculator btn-lg">9</button>
+        <button ng-click="add()" class="btn btn-calculator btn-lg">+</button>
       </div>
-      <div class="row">
-        <span>
-        <button ng-click="input4()" class="btn btn-success btn-lg">4</button>
-        <button ng-click="input5()" class="btn btn-success btn-lg">5</button>
-        <button ng-click="input6()" class="btn btn-success btn-lg">6</button>
-        <button ng-click="subtract()" class="btn btn-success btn-lg">-</button>
-        </span>
+      <div class="row text-center">
+        <button ng-click="input4()" class="btn btn-calculator btn-lg">4</button>
+        <button ng-click="input5()" class="btn btn-calculator btn-lg">5</button>
+        <button ng-click="input6()" class="btn btn-calculator btn-lg">6</button>
+        <button ng-click="subtract()" class="btn btn-calculator btn-lg">-</button>
       </div>
-      <div class="row">
-        <span>
-        <button ng-click="input1()" class="btn btn-success btn-lg">1</button>
-        <button ng-click="input2()" class="btn btn-success btn-lg">2</button>
-        <button ng-click="input3()" class="btn btn-success btn-lg">3</button>
-        <button ng-click="equal()" class="btn btn-success btn-lg">=</button>
-        </span>
+      <div class="row text-center">
+        <button ng-click="input1()" class="btn btn-calculator btn-lg">1</button>
+        <button ng-click="input2()" class="btn btn-calculator btn-lg">2</button>
+        <button ng-click="input3()" class="btn btn-calculator btn-lg">3</button>
+        <button ng-click="equal()" class="btn btn-calculator btn-lg">=</button>
       </div>
-      <div class="row">
-        <span>
-          <button ng-click="input0()" class="btn btn-success btn-lg">0</button>
-          <button ng-click="clear()" class="btn btn-success btn-lg">C</button>
-        </span>
+      <div class="row text-center">
+          <button ng-click="input0()" class="btn btn-calculator btn-lg">0</button>
+          <button ng-click="clear()" class="btn btn-calculator btn-lg">C</button>
+          <!-- <button ng-click="multiply()" class="btn btn-calculator btn-lg"></button> -->
       </div>
     </form>
   </div>

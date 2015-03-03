@@ -43,6 +43,10 @@ var indexCtrl = calculator.controller('indexCtrl', function($scope){
     $scope.a_number = '-';
     console.log('hello')
   };
+  $scope.multiply = function() {
+    $scope.result.push($scope.a_number);
+    $scope.a_number = '/';
+  };
   $scope.equal = function() {
     $scope.result.push($scope.a_number);
     $scope.result = $scope.result.map(Number);
